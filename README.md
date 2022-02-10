@@ -17,9 +17,9 @@ This is my second react project and second frontend mentor solution. In this cha
 
 ### Links
 
-- Live Site URL - [Link](#)
+- Live Site URL - [Link](https://3-col-preview-card-martin-kamir.netlify.app/)
 - Website - [Martin Kamír](https://martinkamir.com/)
 - Frontend Mentor - [@Martin-K-Kamir](https://www.frontendmentor.io/profile/Martin-K-Kamir)
-- Frontend Mentor Solution - [Solution link](#)
+- Frontend Mentor Solution - [Solution link](https://www.frontendmentor.io/solutions/react-and-scss-3col-preview-card-component-eQpv-6Bqg)
 
 Happy coding! 😄
