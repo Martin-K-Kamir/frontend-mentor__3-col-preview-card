@@ -1,0 +1,35 @@
+// SECTION: Breakpoints
+$pc-min: 1440px;
+$tablet-max: 950px;
+$tablet-min: 750px;
+
+// SECTION: Colors
+$clr-primary-500: hsl(31, 77%, 52%);
+$clr-primary-300: hsl(31, 77%, 35%);
+$clr-primary-100: hsl(31, 77%, 15%);
+$clr-primary-d: $clr-primary-500;
+
+$clr-secondary-300: hsl(184, 100%, 30%);
+$clr-secondary-200: hsl(184, 100%, 22%);
+$clr-secondary-100: hsl(179, 100%, 13%);
+$clr-secondary-d: $clr-secondary-200;
+
+$clr-white-1000: hsl(0, 0%, 100%);
+$clr-white-900: hsl(0, 0%, 95%);
+$clr-white-500: hsl(0, 0%, 55%);
+$clr-white-d: $clr-white-1000;
+
+$clr-white-o-700: hsl(0, 0%, 100%, 0.75);
+$clr-white-o-500: hsl(0, 0%, 100%, 0.50);
+$clr-white-o-200: hsl(0, 0%, 100%, 0.20);
+
+// SECTION: Font styles
+$fs-default: 1.5rem;
+
+$font-default: 'Lexend Deca', sans-serif;
+$font-title: 'Big Shoulders Display', cursive;
+
+$fw-default: 400;
+$fw-max: 800;
+$fw-b: 700;
+$fw-s: 300;

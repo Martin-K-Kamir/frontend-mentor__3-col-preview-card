@@ -1,0 +1,94 @@
+.cards-container {
+    margin: 3rem 0;
+    @include flex-split;
+    @include mq-max($tablet-min) {@include flex-col-center}
+
+    & .card:first-child {
+        border-radius: .8rem 0 0 .8rem;
+        background-color: $clr-primary-d;
+        animation: show-in .3s ease-in;
+
+        @include mq-max($tablet-min) {border-radius: .8rem .8rem 0 0}
+
+        & .btn {color: $clr-primary-d}
+    }
+
+    & .card:nth-child(2) {
+        background-color: $clr-secondary-d;
+        animation: show-in .3s ease-in .2s backwards;
+
+        & .btn {color: $clr-secondary-d}
+    }
+
+    & .card:last-child {
+        border-radius: 0 .8rem .8rem 0;
+        background-color: $clr-secondary-100;
+        animation: show-in .3s ease-in .4s backwards;
+
+        @include mq-max($tablet-min) {border-radius: 0 0 .8rem .8rem}
+
+        & .btn {color: $clr-secondary-100}
+    }
+}
+
+.card {
+    background-color: $clr-primary-d;
+    color: $clr-white-900;
+    padding: 4.8rem 4.9rem;
+    @include size(50rem, 30.7rem);
+    
+    @include mq-min-max($tablet-min, $tablet-max) {
+        padding: 3rem;
+        @include size(37rem, 23rem);
+    }
+
+    &__icon {
+        margin-left: -1px; // Just to make it pixel perfect
+    }
+    
+    &__title {
+        margin-top: 2.3rem;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+
+        @include mq-min-max($tablet-min, $tablet-max) {
+            margin-top: 1.5rem;
+            font-size: 3rem;
+        }
+    }
+
+    &__par {
+        margin-top: 2rem;
+        line-height: 2.5rem;
+        color: $clr-white-o-700;
+        width: 21.1rem;
+
+        @include mq-min-max($tablet-min, $tablet-max) {
+            margin-top: 1rem;
+            width: 17.1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    & .btn {
+        margin-top: 8.2rem;
+        margin-left: -1px; // Just to make it pixel perfect
+
+        @include mq-min-max($tablet-min, $tablet-max) {
+            margin-top: 2.8rem;
+        }
+    }
+}
+
+@keyframes show-in {
+    0% {
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

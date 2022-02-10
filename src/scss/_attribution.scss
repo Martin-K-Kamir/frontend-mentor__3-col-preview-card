@@ -1,0 +1,8 @@
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.3rem;
+
+    @include mq-max($tablet-min) {display: none} 
+    @include mq-max-height(500px) {display: none} 
+}

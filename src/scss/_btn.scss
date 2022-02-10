@@ -1,0 +1,23 @@
+.btn {
+    background-color: $clr-white-900;
+    color: black;
+    font-size: $fs-default;
+    font-family: $font-default;
+    border-radius: 30rem;
+    border: solid .2rem $clr-white-900;
+    transition: all .4s ease;
+    
+    @include size(4.8rem, 14.6rem);
+    @include flex-center;
+
+    @include mq-max($tablet-max) {
+        font-size: 1.4rem;
+        @include size(4.2rem, 13rem);
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-white-900 !important;
+        border: solid .2rem $clr-white-900;
+    }
+}

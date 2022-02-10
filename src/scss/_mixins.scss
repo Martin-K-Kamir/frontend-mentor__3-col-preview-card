@@ -1,0 +1,119 @@
+// SECTION: Width & Height
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin size-same($size) {
+  height: $size;
+  width: $size;
+}
+
+
+// SECTION: Media queries
+@mixin mq-max($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin mq-min($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @mixin mq-min-max($breakpointMin, $breakpointMax) {
+    @media only screen and (min-width: $breakpointMin) and (max-width: $breakpointMax) {
+      @content;
+    }
+  }
+
+  @mixin mq-max-height($breakpoint) {
+    @media screen and (max-height: $breakpoint) {
+      @content;
+    }
+  }
+  
+  // SECTION: Flexbox
+  @mixin flex-me($justify: center, $align: center, $gap: null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+  }
+  
+  @mixin flex-center($gap: null) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+  }
+  
+  @mixin flex-align-center($gap: null) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+  }
+  
+  @mixin flex-justify-center($gap: null) {
+    display: flex;
+    justify-content: center;
+    gap: $gap;
+  }
+  
+  @mixin flex-col-center($gap: null) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+  }
+  
+  @mixin flex-split($gap: null) {
+    display: flex;
+    gap: $gap;
+  }
+  
+  // SECTION: Absolute
+  @mixin abs-center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @mixin abs-side($tb: null, $rl: null) {
+    position: absolute;
+    top: $tb;
+    right: $rl;
+    bottom: $tb;
+    left: $rl;
+  }
+  
+  @mixin abs-center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @mixin abs-center-Y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @mixin abs-center-X {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
