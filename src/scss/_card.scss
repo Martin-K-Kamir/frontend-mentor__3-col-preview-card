@@ -1,4 +1,5 @@
 .cards-container {
+    margin-top: 2rem; // Just to make it pixel perfect
     @include flex-split;
     @include mq-max($tablet-min) {
         margin: 3rem 0;
