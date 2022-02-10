@@ -1,12 +1,14 @@
 .cards-container {
-    margin: 3rem 0;
     @include flex-split;
-    @include mq-max($tablet-min) {@include flex-col-center}
+    @include mq-max($tablet-min) {
+        margin: 3rem 0;
+        @include flex-col-center;
+    }
 
     & .card:first-child {
         border-radius: .8rem 0 0 .8rem;
         background-color: $clr-primary-d;
-        animation: show-in .3s ease-in;
+        // animation: show-in .3s ease-in; animation which i can't use, because on frontend-mentor design comparision will be vissable 1 card
 
         @include mq-max($tablet-min) {border-radius: .8rem .8rem 0 0}
 
@@ -15,7 +17,7 @@
 
     & .card:nth-child(2) {
         background-color: $clr-secondary-d;
-        animation: show-in .3s ease-in .2s backwards;
+        // animation: show-in .3s ease-in .2s backwards;
 
         & .btn {color: $clr-secondary-d}
     }
@@ -23,7 +25,7 @@
     & .card:last-child {
         border-radius: 0 .8rem .8rem 0;
         background-color: $clr-secondary-100;
-        animation: show-in .3s ease-in .4s backwards;
+        // animation: show-in .3s ease-in .4s backwards;
 
         @include mq-max($tablet-min) {border-radius: 0 0 .8rem .8rem}
 
